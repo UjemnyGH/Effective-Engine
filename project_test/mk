@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcc -Ofast -Os -m64 -Wall -Wextra -Wpedantic -Werror -std=c2x -o effective src/*.c ../engine/*.c -I ../vendor/include -lGL -lglfw -lpthread -lm
+./effective
